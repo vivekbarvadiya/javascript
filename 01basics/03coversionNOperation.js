@@ -14,9 +14,27 @@ let valueInNumber = Number(score);
 let bool = 0;
 let boolInt = Boolean(bool);
 
-console.log(boolInt);
+// console.log(boolInt);
 
 // 1 => t,0 => f
 // "" => f , "any content" => t
 
 // String(number) => number to string conversion
+
+
+// Operations
+
+// basic +,*,-,/,%,**
+
+// console.log("1" + 2);
+// console.log(1 + "2");
+// console.log("1" + 2 + 2);
+// console.log(1 + 2 + "2");
+
+
+//if string is first then convert whole to string 
+// and if string is at last then first calculate.
+
+
+console.log(+true);
+console.log(+"");
