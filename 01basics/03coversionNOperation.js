@@ -36,5 +36,21 @@ let boolInt = Boolean(bool);
 // and if string is at last then first calculate.
 
 
-console.log(+true);
-console.log(+"");
+// console.log(+true);
+// console.log(+"");
+
+// console.log("2" > 1);
+// console.log("02" > 1);
+
+
+
+// console.log(null > 0);
+// //comparision convert number to zero that why below is true and above is false
+// console.log(null >= 0); 
+// console.log(null == 0);
+
+
+
+console.log(undefined > 0);
+console.log(undefined == 0);
+
