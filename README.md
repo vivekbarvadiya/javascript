@@ -1,7 +1,19 @@
 # javascript
 
-## project links
+Javascript -> \
+(default javascript nature)
 
-[Click here](https://google.com)
+synchronous \
+single threaded (this make it slow)
 
-# solution code
+
+## Execution context 
+
+ececute one line of code at a time
+
+-> each oprtaion waits for the last one to complete before executing
+
+
+
+## Blocking vs non-blocking code
+

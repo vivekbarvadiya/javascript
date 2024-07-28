@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="lis">
+        <div>
+            <li id="js">javascript</li>
+        </div>
+        <div>
+
+            <li id="py">python</li>
+        </div>
+    </ul>
+</body>
+
+<script>
+    // method 1
+    // document.getElementById('py').onclick = function(){
+    //     alert("py")
+    // }
+
+    // method 2
+    // document.getElementById('py').addEventListener('click',function(){
+    //     alert('py clicked again')
+    // })
+
+    // attachEvent()
+    // jQuery - on 
+
+
+    // to do read -> types, timestamp, defaultprevented
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keycode
+
+    // Event propogation
+    // Event bubbling and event capturing
+
+
+    // Event bubbling -> top to bottom
+
+    // Event capturing -> bottom to top
+
+    // document.getElementById('lis').addEventListener('click', function (e) {
+    //     console.log('click on lis');
+    // }, false) //by default it is false but when we give 
+
+    // document.getElementById('py').addEventListener('click', function (e) {
+    //     console.log('click on python');
+    //     // e.stopPropogation(); //event will not go to upside throught bubbling
+    // }, false) //we can switch bubbling to capturing phase by giving third parameter as true
+
+    // e.preventDefault() -> to prevent default parametrs like onclick of li website will open if you give e.preventDefault() then website will not open
+
+    document.querySelector('#lis').addEventListener('click', function (e) {
+        console.log(e.target.parentNode);
+        let removeIt = e.target.parentNode;
+        removeIt.remove()
+        // removeIt.parentNode.removeChild(removeIt)
+    }, false)
+
+
+</script>
+
+</html>
